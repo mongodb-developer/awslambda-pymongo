@@ -1,0 +1,2 @@
+This is an example of how to use AWS Lambda with Pymongo. 
+We are connecting our MongoDB Atlas cluster with AWS Lambda to find a sample size of 5 American restaurants that are located in Brooklyn. 
