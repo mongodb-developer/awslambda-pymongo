@@ -18,14 +18,14 @@ def lambda_handler(event, context):
         {"$limit": 5},
 
         # We don't want all the details, project what you need
-        {"$project": {"_id": 0, "borough": 1, "cuisine": 1, "name": 1}}
-        
+        {"$project": {"_id": 0, "name": 1, "borough": 1, "cuisine": 1}}
+
     ]
 
-    # This will show our pipeline 
+    # This will make our pipeline work
     result = list(collection.aggregate(pipeline))
 
-    # Print the result
+    # Print our five results
     for restaurant in result:
         print(restaurant)
 
