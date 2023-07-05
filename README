@@ -1,5 +1,5 @@
 This is an example of how to use AWS Lambda with Pymongo. 
 We are connecting our MongoDB Atlas cluster with AWS Lambda to find a sample size of 5 American restaurants that are located in Brooklyn. 
 
-To properly upload this on AWS Lambda, please make sure to only upload the zip named: my_deployment_package.zip  
+To properly upload this on AWS Lambda, please make sure to only upload the zip named: deployment.zip  
 In AWS Lambda we need to also set our environment variables. Store your cluster link under "ATLAS_URI" as a key pair in the "Configuration" tab.
